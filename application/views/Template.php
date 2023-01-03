@@ -105,8 +105,8 @@
 
 
 
-              <li style="font-style: bold; font-size: bold; color: RGB(245, 245, 245);" class="nav-header">Menu </li>
-              <li class="nav-item">
+             <li style="font-style: bold; font-size: bold; color: RGB(245, 245, 245);" class="nav-header">Menu </li>
+               <li class="nav-item">
                 <a style="color: RGB(245, 245, 245);" href="#" class="nav-link">
                   <i class="nav-icon fas fa-folder-plus"></i>
                   <p style="color: RGB(245, 245, 245);">
@@ -125,9 +125,18 @@
                     </a>
                   </li>
                 </ul>
-
-
             </li>
+
+
+            <li class="nav-item Active">
+                <a style="color: RGB(245, 245, 245);" href="<?= site_url('uploads') ?>" class="nav-link">
+                  <i class="nav-icon  fas fa-file"></i>
+                  <p style="color: RGB(245, 245, 245);">
+                  uploads
+                  </p>
+                </a>
+              </li>
+
 
           </ul>
           </li>
