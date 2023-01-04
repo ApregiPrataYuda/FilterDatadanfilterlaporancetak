@@ -34,17 +34,25 @@
 
         <div class="form-group col-md-5 class=" form-group <?= form_error('image') ? 'has-error' : null ?>">
           <label for="image"><span> image</span> </label>
-
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
             <div class="holder col-md-4">
               <span class="badge badge-secondary">Preview Image</span><br>
                 <img id="imgPreview" class="img-fluid img-thumbnail" src="#" alt="add image" />
             </div>
-
-          <input type="file" class="form-control" name="image" id="image"  accept="image/png, image/jpeg, image/jpg, image/gif">
+          <!-- <input type="file" class="form-control" name="image" id="image"  accept="image/png, image/jpeg, image/jpg, image/gif"> -->
+          <div class="custom-file ml-1 mb-2 col-md-12">
+            <input type="file" name="image" class="custom-file-input" id="image"  id="customFile" accept="image/png, image/jpeg, image/jpg, image/gif">
+            <label class="custom-file-label" for="customFile">Pilih file</label>
+          </div>
           <small class="text-danger" style="font-style: italic "><span class="badge badge-danger"><?= form_error('image') ?></span></small>
         </div>
+
+        <script>
+            $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            });
+        </script>
 
 
 

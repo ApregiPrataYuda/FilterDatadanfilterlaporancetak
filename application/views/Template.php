@@ -128,11 +128,20 @@
             </li>
 
 
-            <li class="nav-item Active">
+              <li class="nav-item Active">
                 <a style="color: RGB(245, 245, 245);" href="<?= site_url('uploads') ?>" class="nav-link">
                   <i class="nav-icon  fas fa-file"></i>
                   <p style="color: RGB(245, 245, 245);">
                   uploads
+                  </p>
+                </a>
+              </li>
+
+              <li class="nav-item Active">
+                <a style="color: RGB(245, 245, 245);" href="<?= site_url('file') ?>" class="nav-link">
+                  <i class="nav-icon  fas fa-file"></i>
+                  <p style="color: RGB(245, 245, 245);">
+                  files
                   </p>
                 </a>
               </li>
