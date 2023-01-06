@@ -147,6 +147,17 @@
               </li>
 
 
+              <li class="nav-item Active">
+                <a style="color: RGB(245, 245, 245);" href="<?= site_url('kirim_email') ?>" class="nav-link">
+                  <i class="nav-icon  fas fa-file"></i>
+                  <p style="color: RGB(245, 245, 245);">
+                  Email Smtp
+                  </p>
+                </a>
+              </li>
+
+
+
           </ul>
           </li>
           </ul>

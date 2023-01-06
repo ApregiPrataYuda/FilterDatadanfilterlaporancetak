@@ -18,7 +18,6 @@ class Filter extends CI_Controller {
 		$ambiltahun = $this->Filter_models->ambilTahun();
 		$ambilbulan = $this->Filter_models->ambilbulan();
 
-
 		$data = array('row' => $ambiltahun, 'rowx' => $ambilbulan);
 		$this->template->load('Template','Filter/Filter_data',$data);
 	}
