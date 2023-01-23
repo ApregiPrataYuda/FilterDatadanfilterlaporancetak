@@ -47,7 +47,7 @@
 
           <!-- <div class="form-group">
             <label>File</label>
-            <input class="form-control" type="file" name="file">
+            <input class="form-control" type="text" name="CC">
           </div> -->
 
         <div class="row ml-auto mb-3 mr-5">

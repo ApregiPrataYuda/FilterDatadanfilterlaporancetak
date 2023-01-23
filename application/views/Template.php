@@ -157,6 +157,26 @@
               </li>
 
 
+              <li class="nav-item Active">
+                <a style="color: RGB(245, 245, 245);" href="<?= site_url('Data') ?>" class="nav-link">
+                  <i class="nav-icon  fas fa-file"></i>
+                  <p style="color: RGB(245, 245, 245);">
+                    Data Ajax
+                  </p>
+                </a>
+              </li>
+
+
+              <li class="nav-item Active">
+                <a style="color: RGB(245, 245, 245);" href="<?= site_url('Captcha') ?>" class="nav-link">
+                  <i class="nav-icon  fas fa-file"></i>
+                  <p style="color: RGB(245, 245, 245);">
+                    Captha
+                  </p>
+                </a>
+              </li>
+
+
 
           </ul>
           </li>

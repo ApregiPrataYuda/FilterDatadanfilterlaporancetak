@@ -46,6 +46,8 @@ class kirim_email extends CI_Controller {
 	  $mail->addAddress($this->input->post('email')); //email tujuan pengiriman email
 
 	//   $mail->AddAttachment("./Pictures/tes.pdf");
+	// $mail->addCC('apregiell@gmail.com');
+	
    
 	  // Set email format to HTML
 	  $mail->isHTML(true);
@@ -69,8 +71,6 @@ class kirim_email extends CI_Controller {
 		  <td>".$this->input->post('catatan')."</td>
 		</tr>
 
-
-		
 	  </table>
 	  <p>Terimakasih <b>".$this->input->post('nama')."</b> telah memberi komentar.</p>"; // isi email
 
