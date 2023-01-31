@@ -1,19 +1,19 @@
 
-<?php  
+//<?php  
 //Membuat batasan waktu sesion untuk user di PHP 
-$timeout = 1; // Set timeout menit
-$logout_redirect_url = "Auth/Login"; // Set logout URL
+// $timeout = 1; // Set timeout menit
+// $logout_redirect_url = "Auth/Login"; // Set logout URL
  
-$timeout = $timeout * 40; // Ubah menit ke detik
-if (isset($_SESSION['start_time'])) {
-    $elapsed_time = time() - $_SESSION['start_time'];
-    if ($elapsed_time >= $timeout) {
-        session_destroy();
-        echo "<script>alert('Waktu Anda Telah Habis Broo!'); window.location = '$logout_redirect_url'</script>";
-    }
-}
-$_SESSION['start_time'] = time();
-?>
+// $timeout = $timeout * 40; // Ubah menit ke detik
+// if (isset($_SESSION['start_time'])) {
+//     $elapsed_time = time() - $_SESSION['start_time'];
+//     if ($elapsed_time >= $timeout) {
+//         session_destroy();
+//         echo "<script>alert('Waktu Anda Telah Habis Broo!'); window.location = '$logout_redirect_url'</script>";
+//     }
+// }
+// $_SESSION['start_time'] = time();
+// ?>
 
 
 
@@ -179,7 +179,7 @@ $_SESSION['start_time'] = time();
 
 
               <li class="nav-item Active">
-                <a style="color: RGB(245, 245, 245);" href="<?= site_url('Data') ?>" class="nav-link">
+                <a style="color: RGB(245, 245, 245);" href="<?= site_url('Ajax') ?>" class="nav-link">
                   <i class="nav-icon  fas fa-file"></i>
                   <p style="color: RGB(245, 245, 245);">
                     Data Ajax
